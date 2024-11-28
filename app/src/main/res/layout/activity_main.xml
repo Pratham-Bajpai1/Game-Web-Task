@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!-- Row Layout for Games -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp">
+
+        <!-- Game 1 Section -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="16dp">
+
+            <!-- Game 1 Title -->
+            <TextView
+                android:id="@+id/game1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game 1"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Game 1 Image Button -->
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/game1"
+                android:layout_width="100dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:background="@null"
+                android:src="@drawable/game1_image" />
+
+            <!-- Game 1 Subtitle -->
+            <TextView
+                android:id="@+id/game1_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balloon Escape"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Game 2 Section -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Game 2 Title -->
+            <TextView
+                android:id="@+id/game2_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game 2"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Game 2 Image Button -->
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/game2"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:background="@null"
+                android:src="@drawable/game2_image" />
+
+            <!-- Game 2 Subtitle -->
+            <TextView
+                android:id="@+id/game2_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Three Dots"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
